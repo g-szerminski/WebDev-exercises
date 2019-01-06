@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    position: relative;
+    height: 100vh;
+    background-color: #555;
+    transition: .5s;
+}
+
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1;
+}
+
+div.red {
+    left: 30px;
+    top: 30px;
+    background-color: red;
+}
+div.green {
+    right: 30px;
+    top: 30px;
+    background-color: green;
+}
+div.blue {
+    left: 30px;
+    bottom: 30px;
+    background-color: blue;
+}
+div.orange {
+    right: 30px;
+    bottom: 30px;
+    background-color: orange;
+}
+
+div.red:hover~div.bg {
+    background-color: red;
+}
+div.green:hover~div.bg {
+    background-color: green;
+}
+div.blue:hover~div.bg {
+    background-color: blue;
+}
+div.orange:hover~div.bg {
+    background-color: orange;
+}
+
+.bg p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    transition: .5s;
+    line-height: 100vh;
+    opacity: 0;
+}
+
+div.red:hover~div.bg p.red,
+div.green:hover~div.bg p.green,
+div.blue:hover~div.bg p.blue,
+div.orange:hover~div.bg p.orange {
+    opacity: 1;
+}

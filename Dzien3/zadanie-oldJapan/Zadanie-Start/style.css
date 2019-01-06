@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.picture {
+    position: relative;
+    width: 80vh;
+    height: 45vh;
+    background-color: lightblue;
+    overflow: hidden;
+    margin: calc(50vh - 45vh/2) auto;
+}
+
+img {
+    display: none;
+    position: absolute;
+}
+img:nth-child(1) {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: -10%;
+}
+img:nth-child(2) {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: -25%;
+}
+img:nth-child(3) {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: -35%;
+}
+img:nth-child(4) {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: -30%;
+}
+img:nth-child(5) {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: -41%;
+}
+img:nth-child(6) {
+    display: block;
+    width: 100%;
+    left: 0;
+    bottom: -66%;
+}
+img:nth-child(7) {
+    display: block;
+    width: 10%;
+    left: 5%;
+    top: 4%;
+}
+img:nth-child(8) {
+    display: block;
+    width: 20%;
+    left: -4%;
+    top: 11%;
+}
+img:nth-child(9) {
+    display: block;
+    width: 35%;
+    right: 0;
+    top: 7%;
+}
+img:nth-child(10) {
+    display: block;
+    width: 30%;
+    right: 0;
+    top: 21%;
+}
+/* img:nth-child(11) {
+    display: block;
+    width: 7%;
+    left: 6%;
+    bottom: 15%;
+} */
+img[src="img/japan11.png"] {
+    display: block;
+    width: 7%;
+    left: 6%;
+    bottom: 15%;
+}

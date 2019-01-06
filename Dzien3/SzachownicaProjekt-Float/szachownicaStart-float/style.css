@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body {
+    background-color: #777;
+    /* text-align: center; */
+}
+
+.clear-fix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.board {
+    margin: 50px auto;
+    width: 30vw;
+    border: 10px solid black;
+}
+
+span {
+    float: left;
+    width: 50%;
+    height: 15vw;
+    background-color: #ddd;
+}
+
+span:first-child, span:last-child {
+    background-color: red;
+}
+h1 {
+    text-align: center;
+}

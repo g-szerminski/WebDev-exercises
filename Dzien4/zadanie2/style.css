@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    /* position: relative; */
+    background-color: #777;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    line-height: 60px;
+    padding: 0 40px;
+    color: black;
+    background-color: #fff;
+    font-size: 15px;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #000;
+    color: white;
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    /* background-color: #000; */
+    background-image: url(Węgielek1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* transition: 1.5s; */
+    transition: left .5s, top .5s .5s, 
+    width .5s .5s, height .5s .5s;
+}
+
+button:hover + .square {
+    top: calc(100% - 80px);
+    left: calc(100% - 80px);
+    width: 80px;
+    height: 80px;
+    /* transform: translate(500px, 500px); */
+}

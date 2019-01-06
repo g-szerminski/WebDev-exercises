@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.board {
+    position: absolute;
+    width: 30vw;
+    height: 30vw;
+    border: 10px solid black;
+    top: calc(50% - 30vw/2);
+    right: calc(50% - 30vw/2);
+    font-size: 0;
+}
+
+span {
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+}
+
+span:first-child, span:last-child {
+    background-color: red;
+}
+
+h1 {
+    position: absolute;
+    font-family: arial;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+}

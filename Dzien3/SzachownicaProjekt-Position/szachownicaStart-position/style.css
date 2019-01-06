@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.board {
+    position: absolute;
+    top: calc(50% - 50vw/2);
+    left: calc(50% - 50vw/2);
+    width: 50%;
+    height: 50vw;
+    border: 10px solid black;
+}
+
+span {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+span:nth-child(1) {
+    top: 0;
+    left: 0;
+    background-color: red;
+}
+span:nth-child(2) {
+    top: 0;
+    left: 50%;
+}
+span:nth-child(3) {
+    top: 50%;
+    left: 0;
+}
+span:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    background-color: red;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 90vh;
+}

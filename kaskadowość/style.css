@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&subset=latin-ext');
+/* font-family: 'Great Vibes', cursive; */
+
+p {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+p+p {
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'Great Vibes', cursive;
+    display: inline-block;
+}
+p+p::first-letter {
+    font-size: 100px;
+}
+p+p:
+::selection {
+    background-color: green;
+    color: aqua;
+}
