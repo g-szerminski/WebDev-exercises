@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--sizeRect: 150px;
+	--rotateRect: 45deg;
+	--colorRect: #000;
+	--glowRectYellow: 0 0 46px 2px yellow;
+	--glowRectRed: 0 0 96px 2px red;
+}
+
+body {
+	text-align: center;
+	background-color: #555;
+	color: beige;
+	font-family: arial;
+}
+
+label {
+	font-size: 30px;
+	margin-right: 30px;
+}
+input {
+	width: 30px;
+	height: 30px;
+	margin-right: 30px;
+	/*display: none;*/
+}
+div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 2px solid black;
+	width: var(--sizeRect);
+	height: var(--sizeRect);
+	transition: .3s; 
+}
+#size:checked ~ div {
+	width: calc(2 * var(--sizeRect));
+	height: calc(2 * var(--sizeRect));
+}
+#rotate:checked ~ div {
+	transform: translate(-50%, -50%) rotate(var(--rotateRect));
+}
+#color:checked ~ div {
+	background-color: var(--colorRect);
+}
+#glow:checked ~ div {
+	box-shadow: var(--glowRectYellow);
+}
+
+#size:checked~#glow:checked ~ div {
+	box-shadow: var(--glowRectRed);
+}
