@@ -1,0 +1,24 @@
+{
+  "name": "WebDev2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/g-szerminski/WebDev-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/g-szerminski/WebDev-exercises/issues"
+  },
+  "homepage": "https://github.com/g-szerminski/WebDev-exercises#readme",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

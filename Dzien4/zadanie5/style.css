@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #777;
+    background-color: #666;
 }
 
 span {
@@ -18,4 +18,87 @@ span {
     background-color: #444;
     color: beige;
     cursor: pointer;
+}
+
+div {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    width: 0;
+    height: 0;
+    transition: 1s;
+}
+
+span:hover~.roof {
+    transition-delay: 0.2s;
+}
+span:hover~.door {
+    transition-delay: 0.4s;
+}
+span:hover~.window-l {
+    transition-delay: 0.6s;
+}
+span:hover~.window-p {
+    transition-delay: 0.8s;
+}
+span:hover~.chimney {
+    transition-delay: 1s;
+}
+
+span:hover~.wall { 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vh;
+    height: 35vh;
+    background-color: brown;
+    z-index: 1;
+}
+span:hover~.roof {
+    top: calc(50% - 35vh/2);
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: calc(60vh/1.4142);
+     height: calc(60vh/1.4142);
+    /*width: 40vw;
+    height: 40vh;*/
+    background-color: #000;    
+}
+span:hover~.door {
+    top: calc(50% + 10vh);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10vh;
+    height: 15vh;
+    background-color: gray;
+    z-index: 2;
+}
+span:hover~.window-l {
+    top: 50%;
+    left: calc(50% - 35vh/2);
+    transform: translate(-50%, -50%);
+    width: 10vh;
+    height: 10vh;
+    /*background-color: orange;*/
+    background-image: url('./img/zdj.jpg');
+    background-size: cover;
+    z-index: 2;
+}
+span:hover~.window-p {
+    top: 50%;
+    left: calc(50% + 35vh/2);
+    transform: translate(-50%, -50%);
+    width: 10vh;
+    height: 10vh;
+    background-color: orange;
+    z-index: 2;
+}
+span:hover~.chimney {
+    top: calc(50% - 30vh);
+    left: calc(50% + 20vh);
+    transform: translate(-50%, -50%);
+    width: 4vh;
+    height: 10vh;
+    background-color: #333;
+    z-index: -1;
 }
