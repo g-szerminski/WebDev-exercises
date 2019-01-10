@@ -11,6 +11,9 @@
             padding: 0;
             box-sizing: border-box;
         }
+        :root {
+            --textSize: 80px;
+        }
         body {
             text-align: center;
         }
@@ -24,16 +27,16 @@
             left: 50%;
             transform: translate(-50%, -50%);
             font-family: arial;
-            font-size: 80px;
+            font-size: var(--textSize);
             border: 0 solid black;
             transition: .5s;
 
         }
         .larger:hover~h1 {
-            font-size: 160px;
+            font-size: calc(var(--textSize)*2);
         }
         .smaller:hover~h1 {
-            font-size: 40px;
+            font-size: calc(var(--textSize)/2);
         }
         .border:hover~h1 {
             border: 20px solid black;
