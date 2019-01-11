@@ -1,0 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--animationTime: 5s;
+	--animiationRepeat: 2;
+}
+
+body {
+	background-color: #444;
+	animation: sky var(--animationTime) linear var(--animiationRepeat);
+}
+
+.sun {
+	position: fixed;
+	bottom: 15%;
+	left: calc(10% - 10vw);
+	width: 10vw;
+	height: 10vw;
+	background-color: darkred;
+	border-radius: 50%;
+	animation: sun var(--animationTime) linear var(--animiationRepeat);
+}
+.grass {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 30vh;
+	background-color: #222;
+	animation: grass var(--animationTime) linear var(--animiationRepeat);
+}
+
+@keyframes sky {
+	/*0% {	---nie trzeba określać tych właściwości bo będo wzięte domyślnie z body background: itd.; 
+		background-color: #444;
+	}*/
+	20% {
+		background-color: rgb(112, 94, 97);
+	}
+	50% {
+		background-color: lightblue;
+	}
+	80% {
+		background-color: rgb(112, 94, 97);
+	}
+	/*100% {
+		background-color: #444;
+	}*/
+}
+@keyframes grass {
+	/*0% {
+		background-color: #222;
+	}*/
+	20% {
+		background-color: green;
+	}
+	50% {
+		background-color: greenyellow;
+	}
+	80% {
+		background-color: green;
+	}
+	/*100% {
+		background-color: #222;
+	}*/
+}
+@keyframes sun {
+	/*0% {
+		bottom: 15%;
+		left: calc(10% - 10vw);
+		background-color: darkred;
+	}*/
+	50% {
+		bottom: 50%;
+		background-color: yellow;
+	}
+	100% {
+		/*bottom: 15%;*/
+		left: 90%;
+		/*background-color: darkred;*/
+	}			
+}
