@@ -22,9 +22,18 @@
             font-size: var(--textSize);
             border: 0 solid black;
             transition: .5s;
-
         }
-        .larger:hover~h1 {
+        h1.larger {
+            font-size: calc(var(--textSize)*2);
+        }
+        h1.smaller {
+            font-size: calc(var(--textSize)/2);
+        }
+        h1.border {
+            border: 20px solid black;
+        }
+
+       /* .larger:hover~h1 {
             font-size: calc(var(--textSize)*2);
         }
         .smaller:hover~h1 {
@@ -32,4 +41,4 @@
         }
         .border:hover~h1 {
             border: 20px solid black;
-        }
+        }*/
