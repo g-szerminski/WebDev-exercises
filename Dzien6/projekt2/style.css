@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #555;
+}
+
+div {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	animation: move 5s 2 linear, color 2s 5 linear;
+	/*animation-name: move;
+	animation-duration: 5s;
+	animation-iteration-count: 2;
+	animation-timing-function: linear;*/
+}
+@keyframes move {
+	30% {
+		margin-left: calc(100% - 200px);
+	}
+	50% {
+		margin-left: calc(100% - 200px);
+	}
+	80% {
+		margin-left: 0;
+	}
+	100% {
+		margin-left: 0;
+	}
+}
+@keyframes color {
+	10% {
+		background-color: #0f0;
+	}
+	50% {
+		background-color: red;
+	}
+	90% {
+		background-color: #0f0;
+	}
+	100% {
+		background-color: red;
+	}
+}
