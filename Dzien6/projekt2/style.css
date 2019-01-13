@@ -9,12 +9,25 @@ div {
 	width: 200px;
 	height: 200px;
 	background-color: red;
-	animation: move 5s 2 linear, color 2s 5 linear;
+	animation: move 5s 1s infinite steps(10) , color 2s 5 linear;
 	/*animation-name: move;
 	animation-duration: 5s;
 	animation-iteration-count: 2;
 	animation-timing-function: linear;*/
 }
+button {
+	position: fixed;
+	margin: 40px;
+	font-size: 40px;
+}
+
+.start {
+	animation-play-state: paused;
+}
+
+/* button:hover+div {
+	animation-play-state: paused;
+} */
 @keyframes move {
 	30% {
 		margin-left: calc(100% - 200px);
