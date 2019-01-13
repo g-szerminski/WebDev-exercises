@@ -1,39 +1,56 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-button {
+   }
+ 
+   section {
     position: absolute;
-    bottom: 15vh;
-    right: 15vw;
-    border: 2px solid black;
-    width: 360px;
-    height: 100px;
-    background-color: #fff;
-    font-size: 40px;
-    text-transform: uppercase;
-    font-family: roboto condensed;
+    width: 80%;
+    height: 50vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: royalblue;
+    color: white;
     overflow: hidden;
    }
-
-button span {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;   
-    line-height: 100px;
-    transition: .2s;
+  
+   h1 {
+       position: absolute;
+       top: 50%;
+       transform: translate(0, -50%);
+       /* transform: translate(100%, -50%); może też być taki stan początkowy*/
+       left: 0;
+       width: 100%;
+       text-align: center;
+       font-size: 60px;
+       text-transform: uppercase;
+       font-family: open sans, sans-serif;
+       animation: text 9s linear infinite both;
+   }
+   @keyframes text {
+       0% {
+           transform: translate(100%, -50%);
+       }
+       3% {
+            transform: translate(100%, -50%);
+       }
+       6% {
+            transform: translate(0, -50%);r
+       }
+       30% {
+        transform: translate(0, -50%);
+       }
+       33% {
+        transform: translate(-100%, -50%);
+       }
+       100% {
+        transform: translate(-100%, -50%);
+       }
+   }
+h1:nth-child(2) {
+    animation-delay: 3s;
 }
-
-button span:nth-of-type(2) {
-    top: -100px;
-    left: 360px;
-}
-button:hover span:nth-of-type(1) {
-    left: -360px;
-}
-button:hover span:nth-of-type(2) {
-    left: 0;
+h1:nth-child(3) {
+    animation-delay: 6s;
 }
