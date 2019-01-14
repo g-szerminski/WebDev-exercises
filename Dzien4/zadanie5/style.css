@@ -29,7 +29,7 @@ div {
     transition: 1s;
 }
 
-span:hover~.roof {
+/*span:hover~.roof {
     transition-delay: 0.2s;
 }
 span:hover~.door {
@@ -43,7 +43,7 @@ span:hover~.window-p {
 }
 span:hover~.chimney {
     transition-delay: 1s;
-}
+}*/
 
 span:hover~.wall { 
     top: 50%;
@@ -62,7 +62,8 @@ span:hover~.roof {
      height: calc(60vh/1.4142);
     /*width: 40vw;
     height: 40vh;*/
-    background-color: #000;    
+    background-color: #000;
+    transition-delay: 0.2s;    
 }
 span:hover~.door {
     top: calc(50% + 10vh);
@@ -72,6 +73,7 @@ span:hover~.door {
     height: 15vh;
     background-color: gray;
     z-index: 2;
+    transition-delay: 0.4s;
 }
 span:hover~.window-l {
     top: 50%;
@@ -83,6 +85,7 @@ span:hover~.window-l {
     background-image: url('./img/zdj.jpg');
     background-size: cover;
     z-index: 2;
+    transition-delay: 0.6s;
 }
 span:hover~.window-p {
     top: 50%;
@@ -92,6 +95,7 @@ span:hover~.window-p {
     height: 10vh;
     background-color: orange;
     z-index: 2;
+    transition-delay: 0.8s;
 }
 span:hover~.chimney {
     top: calc(50% - 30vh);
@@ -101,4 +105,5 @@ span:hover~.chimney {
     height: 10vh;
     background-color: #333;
     z-index: -1;
+    transition-delay: 1s;
 }
