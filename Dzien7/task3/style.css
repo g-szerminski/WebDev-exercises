@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #555;
+}
+button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #626de5;
+    border-radius: 50%;
+    background-color: #626de5;
+    overflow: hidden;
+}
+button i {
+    position: absolute;
+    transform: translate(-50%, -170%);
+    font-size: 50px;
+    color: white;
+    animation: arrow 1s 3 linear; 
+}
+@keyframes arrow {
+    100% {
+        transform: translate(-50%, 170%);
+    }
+}
