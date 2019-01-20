@@ -1,0 +1,34 @@
+h1 {
+	position: relative;
+	display: inline-block;
+	font-size: 40px;
+	margin: 40px;
+	font-family: monospace;
+	/*font-family: 'roboto condensed', arial;
+	letter-spacing: 16px;*/
+	overflow: hidden;
+}
+h1::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-left: 3px solid black;
+	background-color: white;
+	animation: cursor 1s infinite linear, typing 3s steps(14, start);
+}
+@keyframes cursor {
+	0% {border-color: transparent;}
+	10% {border-color: transparent;}
+	25% {border-color: black;}
+	75% {border-color: black;}
+	90% {border-color: transparent;}
+	100% {border-color: transparent;}
+}
+@keyframes typing {
+	100% {
+		left: 100%;
+	}
+}
