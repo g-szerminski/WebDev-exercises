@@ -63,7 +63,32 @@
    /* align-self: stretch; */
    width: 100%;
    flex-basis: 10vh;
+  }
 
+  @media (max-width: 1024px) {
+    header {
+      order: -1;
+    }
+    /*---1 spsób---*/
+    /*section {
+      flex-wrap: wrap;
+    }
+    aside {
+      flex-basis: 100%;
+    }*/
+
+    /*---2 spsób---*/
+    section {
+      flex-direction: column;
+    }
+    main {
+      /*flex-grow: 2;*/
+      flex-grow: 1;
+    }
+    aside {
+      /*flex-grow: 1;*/
+      flex-basis: 150px;
+    }
   }
  </style>
 </head>
