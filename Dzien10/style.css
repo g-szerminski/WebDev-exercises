@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #555;
+    height: 300vh;
+}
+button {
+    margin: 10px;
+    font-size: 40px;
+}
+p {
+    font-size: 30px;
+}
+p:nth-of-type(2) {
+    position: fixed;
+    top: 150px;
+}
