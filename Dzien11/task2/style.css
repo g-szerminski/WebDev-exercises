@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #555;
+}
+
+button {
+   padding: 10px;
+   font-size: 50px;
+   font-family: sans-serif;
+   background-color: transparent;
+   border: 2px solid black;
+  }
+
+  .square {
+   width: 100px;
+   height: 100px;
+   background-color: #000;
+   position: fixed;
+   top: calc(50% - 50px);
+   left: calc(50% - 50px);
+   /*transition: .5s;*/
+  }
+  .animation {
+  	transition: .5s;
+  	background-color: red;
+  }
