@@ -1,12 +1,18 @@
-
 const burger = document.querySelector(".burger");
 const activeElement = document.querySelectorAll(".active");
 
 burger.addEventListener("click", function () {
-    for (let i = 0; i < activeElement.length; i++) {
-        activeElement[i].classList.toggle("show")
-    }
-})
+	activeElement.forEach(function (item) {
+		item.classList.toggle('show');
+	});
+});
+
+
+//burger.addEventListener("click", function () {
+//    for (let i = 0; i < activeElement.length; i++) {
+//        activeElement[i].classList.toggle("show")
+//    }
+//})
 
 
 // $(".burger").on("click", function () {
