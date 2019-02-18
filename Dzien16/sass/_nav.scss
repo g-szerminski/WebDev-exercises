@@ -1,6 +1,9 @@
 nav {
     height: 30vh;
     ul {
-        background-color: #444;
+        background-color: $color-font;
+        li {
+            font-size: 20px;
+        }
     }
 }
