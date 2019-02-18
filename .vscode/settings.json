@@ -1,2 +1,20 @@
 {
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "Dzien16/css"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "Dzien16/minCSS/css"
+        }
+    ],
+    
+    "liveSassCompile.settings.autoprefix": [
+        "> 1%",
+        "last 2 versions"
+    ]
 }
