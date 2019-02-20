@@ -1,5 +1,5 @@
-=box-flex($direction, $justify)
- display: flex
- flex-direction: $direction
- justify-content: $justify
-
+@mixin menu($direction, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+} 
